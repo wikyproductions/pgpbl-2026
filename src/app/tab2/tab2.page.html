@@ -1,17 +1,187 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      <ion-icon name="list-circle-outline"></ion-icon> Jadwal Kuliah
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Senin</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+        <ion-grid>
+          <ion-row>
+            <ion-col>Mata Kuliah</ion-col>
+            <ion-col>: Pendidikan Agama Islam</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Waktu</ion-col>
+            <ion-col>: 09.00 - 11.00</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Dosen</ion-col>
+            <ion-col>: Agus Kurniawan Ph.D</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Ruang</ion-col>
+            <ion-col>: FS 203</ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>Mata Kuliah</ion-col>
+            <ion-col>: Pancasila</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Waktu</ion-col>
+            <ion-col>: 11.15 - 12.50</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Dosen</ion-col>
+            <ion-col>: Sri Arum Ph.D</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Ruang</ion-col>
+            <ion-col>: FS 203</ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>Mata Kuliah</ion-col>
+            <ion-col>: Pendidikan Kewarganegaraan</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Waktu</ion-col>
+            <ion-col>: 13.00 - 14.30</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Dosen</ion-col>
+            <ion-col>: Mauradi Ph.D</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Ruang</ion-col>
+            <ion-col>: FS 203</ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>Selasa</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>PRAKTIKUM PGPBL</ion-card-title>
+            <ion-card-subtitle>11.00 - 13.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Anshari Ph.D
+            <br>
+            Ruang : Lab SIG B
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>Rabu</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Ide Kreatif dan Kewirausahaan</ion-card-title>
+            <ion-card-subtitle>11.10 - 12.50</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Barandy Ph.D
+            <br>
+            Ruang : Hall DTK
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>PRAKTIKUM SDGL</ion-card-title>
+            <ion-card-subtitle>13.00 - 15.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Ade Ph.D
+            <br>
+            Ruang : Lab SIG B
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="fourth">
+      <ion-item slot="header" color="light">
+        <ion-label>Kamis</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Metodologi Penelitian</ion-card-title>
+            <ion-card-subtitle>11.10 - 12.50</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Like Ph.D
+            <br>
+            Ruang : Hall DTK
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>PRAKTIKUM PPK</ion-card-title>
+            <ion-card-subtitle>13.00 - 15.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Like Ph.D
+            <br>
+            Ruang : LAB PJ B
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion><ion-accordion value="fifth">
+      <ion-item slot="header" color="light">
+        <ion-label>Jumat</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Bahasa Indonesia</ion-card-title>
+            <ion-card-subtitle>07.00 - 09.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Zulizih Ph.D
+            <br>
+            Ruang : FIB 205
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>PRAKTIKUM SDA </ion-card-title>
+            <ion-card-subtitle>13.00 - 15.00</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Dosen : Like Ph.D
+            <br>
+            Ruang : Lab PJ B
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>
