@@ -12,7 +12,7 @@ export class SplashscreenPage implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      window.location.href = 'tabs/tab1';
+      window.location.href = 'login';
     }, 2000);
   }
 
